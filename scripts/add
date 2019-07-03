@@ -2,11 +2,29 @@
 
 GIT_URL=$2
 case $1 in
+  'chat-pane')
+    GIT_URL='https://github.com/solid/chat-pane'
+    ;;
+  'contacts-pane')
+    GIT_URL='https://github.com/solid/contacts-pane'
+    ;;
+  'folder-pane')
+    GIT_URL='https://github.com/solid/folder-pane'
+    ;;
+  'issue-pane')
+    GIT_URL='https://github.com/solid/issue-pane'
+    ;;
   'mashlib')
     GIT_URL='https://github.com/solid/mashlib'
     ;;
+  'meeting-pane')
+    GIT_URL='https://github.com/solid/meeting-pane'
+    ;;
   'node-solid-server')
     GIT_URL='https://github.com/solid/node-solid-server'
+    ;;
+  'pane-registry')
+    GIT_URL='https://github.com/solid/pane-registry'
     ;;
   'solid-panes')
     GIT_URL='https://github.com/solid/solid-panes'
