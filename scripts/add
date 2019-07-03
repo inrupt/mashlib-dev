@@ -47,6 +47,5 @@ cd workspaces
 git clone $GIT_URL
 cd $1
 npm i
-npm run build
 cd ../..
 npx lerna bootstrap

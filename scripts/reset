@@ -6,6 +6,6 @@ npm run add node-solid-server
 npm run add mashlib
 npm run add solid-panes
 npm run add solid-ui
-npx lerna bootstrap
+npx lerna build
 
 openssl req -outform PEM -keyform PEM -new -x509 -sha256 -newkey rsa:2048 -nodes -keyout workspaces/privkey.pem -days 365 -out workspaces/fullchain.pem
