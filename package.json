@@ -1,0 +1,14 @@
+{
+  "name": "mashlib-dev",
+  "private": true,
+  "scripts": {
+    "start": "lerna run start",
+    "add": "scripts/add",
+    "delete": "scripts/delete",
+    "reset": "scripts/reset",
+    "setup": "scripts/reset"
+  },
+  "devDependencies": {
+    "lerna": "^3.15.0"
+  }
+}

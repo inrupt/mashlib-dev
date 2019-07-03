@@ -1,0 +1,34 @@
+#!/bin/bash
+
+GIT_URL=$2
+case $1 in
+  'mashlib')
+    GIT_URL='https://github.com/solid/mashlib'
+    ;;
+  'node-solid-server')
+    GIT_URL='https://github.com/solid/node-solid-server'
+    ;;
+  'solid-panes')
+    GIT_URL='https://github.com/solid/solid-panes'
+    ;;
+  'solid-ui')
+    GIT_URL='https://github.com/solid/solid-ui'
+    ;;
+esac
+
+if test -z "$GIT_URL"
+then
+  echo "repo not recognized, please provide URL to Git repo"
+  exit 1
+fi
+
+echo $GIT_URL
+
+echo ">>>>> ADDING REPO - $GIT_URL to $1"
+cd workspaces
+git clone $GIT_URL
+cd $1
+npm i
+npm run build
+cd ../..
+lerna bootstrap
