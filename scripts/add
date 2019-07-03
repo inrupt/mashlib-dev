@@ -49,4 +49,4 @@ cd $1
 npm i
 npm run build
 cd ../..
-lerna bootstrap
+npx lerna bootstrap
