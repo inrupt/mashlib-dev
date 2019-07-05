@@ -1,6 +1,10 @@
 # Mashlib development project
 
-This project is intended to ease the development setup for the mashlib project. It uses a subset of the functionality in [Lerna](https://lerna.js.org/) to bootstrap the various projects, but you cannot use it to manage multi-package repositories like you normally would want to with Lerna.
+This project is intended to ease the development setup for the mashlib project. 
+It allows you to install automtically several of the componenet repositories of the mashlib system, and coordinate their development.
+
+
+It uses a subset of the functionality in [Lerna](https://lerna.js.org/) to bootstrap the various projects, but you cannot use it to manage multi-package repositories like you normally would want to with Lerna.
 
 The NPM scripts are using bash scripts. These might not work if you're developing on a Windows machine. Let us know if you want support for this.
 
