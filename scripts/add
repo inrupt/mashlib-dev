@@ -26,6 +26,9 @@ case $1 in
   'pane-registry')
     GIT_URL='https://github.com/solid/pane-registry'
     ;;
+  'rdflib')
+    GIT_URL='https://github.com/linkeddata/rdflib.js.git'
+    ;;
   'solid-panes')
     GIT_URL='https://github.com/solid/solid-panes'
     ;;
