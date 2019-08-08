@@ -47,7 +47,8 @@ echo $GIT_URL
 
 echo ">>>>> ADDING REPO - $GIT_URL to $1"
 cd workspaces
-git clone $GIT_URL
+git clone $GIT_URL $1
 cd $1
+nvm use
 npm i
 cd ../..
