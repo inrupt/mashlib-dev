@@ -51,4 +51,3 @@ git clone $GIT_URL
 cd $1
 npm i
 cd ../..
-npx lerna bootstrap

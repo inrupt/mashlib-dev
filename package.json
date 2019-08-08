@@ -2,7 +2,7 @@
   "name": "mashlib-dev",
   "private": true,
   "scripts": {
-    "start": "lerna bootstrap && scripts/start",
+    "start": "scripts/start",
     "add": "scripts/add",
     "delete": "scripts/delete",
     "reset": "scripts/reset",
