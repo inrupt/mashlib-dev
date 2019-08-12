@@ -8,12 +8,13 @@ It uses a subset of the functionality in [Lerna](https://lerna.js.org/) to boots
 
 The NPM scripts are using bash scripts. These might not work if you're developing on a Windows machine. Let us know if you want support for this.
 
+Many of the repositories used in this project uses [Node Version Manager](https://github.com/nvm-sh/nvm) to maintain the Node version used to build the project. Be sure to have it installed.
+
 ## First time setup
 
 ```
 git clone https://github.com/solid/mashlib-dev
 cd mashlib-dev
-npm i
 npm run setup
 ``` 
 
