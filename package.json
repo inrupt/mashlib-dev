@@ -3,12 +3,14 @@
   "private": true,
   "scripts": {
     "start": "scripts/start",
+    "watch": "scripts/watch",
     "add": "scripts/add",
     "delete": "scripts/delete",
     "reset": "scripts/reset",
     "setup": "npm i && scripts/reset"
   },
   "devDependencies": {
+    "concurrently": "^4.1.2",
     "lerna": "^3.15.0"
   }
 }
