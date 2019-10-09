@@ -1,23 +1,29 @@
 #!/bin/bash
 
+FOLDER=$1
 GIT_URL=$2
 case $1 in
-  'chat-pane')
+  'chat' | 'chat-pane')
+    FOLDER='chat-pane'
     GIT_URL='https://github.com/solid/chat-pane'
     ;;
-  'contacts-pane')
+  'contacts' | 'contacts-pane')
+    FOLDER='contacts-pane'
     GIT_URL='https://github.com/solid/contacts-pane'
     ;;
-  'folder-pane')
+  'folder' | 'folder-pane')
+    FOLDER='folder-pane'
     GIT_URL='https://github.com/solid/folder-pane'
     ;;
-  'issue-pane')
+  'issue' | 'issue-pane')
+    FOLDER='issue-pane'
     GIT_URL='https://github.com/solid/issue-pane'
     ;;
   'mashlib')
     GIT_URL='https://github.com/solid/mashlib'
     ;;
-  'meeting-pane')
+  'meeting' | 'meeting-pane')
+    FOLDER='meeting-pane'
     GIT_URL='https://github.com/solid/meeting-pane'
     ;;
   'node-solid-server')
@@ -35,6 +41,10 @@ case $1 in
   'solid-ui')
     GIT_URL='https://github.com/solid/solid-ui'
     ;;
+  'source' | 'source-pane')
+    FOLDER='source-pane'
+    GIT_URL='https://github.com/solid/source-pane'
+    ;;
 esac
 
 if test -z "$GIT_URL"
@@ -45,10 +55,10 @@ fi
 
 echo $GIT_URL
 
-echo ">>>>> ADDING REPO - $GIT_URL to $1"
+echo ">>>>> ADDING REPO - $GIT_URL to $FOLDER"
 cd workspaces
-git clone $GIT_URL $1
-cd $1
+git clone $GIT_URL $FOLDER
+cd $FOLDER
 nvm use
 npm i
 cd ../..
