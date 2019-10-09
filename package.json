@@ -7,7 +7,8 @@
     "add": "scripts/add",
     "delete": "scripts/delete",
     "reset": "scripts/reset",
-    "setup": "npm i && scripts/reset"
+    "setup": "npm i && scripts/reset",
+    "bootstrap": "lerna bootstrap --force-local --scope "
   },
   "devDependencies": {
     "concurrently": "^4.1.2",
