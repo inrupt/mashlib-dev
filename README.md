@@ -13,7 +13,7 @@ Many of the repositories used in this project uses [Node Version Manager](https:
 ## First time setup
 
 ```
-git clone https://github.com/solid/mashlib-dev
+git clone https://github.com/inrupt/mashlib-dev
 cd mashlib-dev
 npm run setup
 ``` 
