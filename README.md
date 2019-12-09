@@ -18,14 +18,14 @@ cd mashlib-dev
 npm run setup
 ``` 
 
-Run this the first time you setup your folder. By default this setups some repos for you:
+Run this the first time you setup your folder. By default this sets up some repos for you:
 
 - [mashlib](https://github.com/solid/mashlib/): the glue that puts everything together
 - [node-solid-server](https://github.com/solid/node-solid-server): the server that allows you to test your changes
 - [solid-panes](https://github.com/solid/solid-panes): the part that handles everything reg panes
 - [solid-ui](https://github.com/solid/solid-ui): a lot of reusable code for solid-panes and the various pane-repos 
 
-Any changes you do in this projects needs to committed to their original repos and eventually pushed manually to NPM (this is the part of Lerna that we do not use for this project).
+Any changes you do in this projects need to be committed to their original repos and eventually be pushed to NPM manually (this is the part of Lerna that we do not use for this project).
 
 You can start your server and test out your code with:
 
