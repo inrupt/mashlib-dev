@@ -29,11 +29,14 @@ case $1 in
   'node-solid-server')
     GIT_URL='https://github.com/solid/node-solid-server'
     ;;
-  'pane-registry')
+  'pane-registry' | 'registry')
     GIT_URL='https://github.com/solid/pane-registry'
     ;;
   'rdflib')
     GIT_URL='https://github.com/linkeddata/rdflib.js.git'
+    ;;
+  'solid-auth-client')
+    GIT_URL='https://github.com/solid/solid-auth-client.git'
     ;;
   'solid-panes')
     GIT_URL='https://github.com/solid/solid-panes'
