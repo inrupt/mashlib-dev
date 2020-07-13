@@ -38,6 +38,9 @@ case $1 in
   'solid-auth-client')
     GIT_URL='https://github.com/solid/solid-auth-client.git'
     ;;
+  'solid-namespace')
+    GIT_URL='https://github.com/solid/solid-namespace'
+    ;;
   'solid-panes')
     GIT_URL='https://github.com/solid/solid-panes'
     ;;
