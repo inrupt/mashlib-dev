@@ -45,21 +45,23 @@ To debug solid-ui, you can combine the solid-ui to solid-panes link with the Pan
 Run:
 ```sh
 npm run add rdflib
-npm start
 cd workspaces/rdflib
 npm install
+npm run build:esm
+cd ../..
+npm start
+[Ctrl+C]
+cd workspaces/solid-ui
+npm run build-lib
 ```
-In another terminal window, run `cd workspaces/solid-ui ; npm run watch`.
+
 In another terminal window, run `cd workspaces/solid-panes/dev/ ; npx webpack-dev-server`.
 Edit `workspaces/solid-panes/dev/pane/` to have the pane you want to debug.
 Open http://localhost:9000 and run `renderPane('http://example.com/#me')` in the console to check
 if your setup works.
-Then, under `workspaces/rdflib`, make your change, for instance add a console.log somewhere. Then:
-```sh
-cd workspaces/rdflib
-npm run build:esm && cd ../solid-ui && npm run build-lib && cd ../rdflib
-```
-The browser will reload. This way, it should take about 20 seconds to see your changes appear in the browser.
+Then, under `workspaces/rdflib`, make your change, for instance add a console.log somewhere. It
+should then be enough to run `npm run build:esm` in `workspaces/rdflib` to make your changes in
+rdflib appear in the browser.
 
 ## Add dependency
 
