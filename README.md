@@ -39,7 +39,7 @@ Some projects require you to build a package before you can see changes, so chec
 
 ## Debugging strategies
 
-There are a couple of ways you can test and debug your changes to the various projects. Before we go into the details, it's important a simplified view of the dependencies:
+There are a couple of ways you can test and debug your changes to the various projects. Before we go into the details, here's a simplified view of the dependencies:
 
 ```
 node-solid-server --> rdflib
@@ -90,7 +90,7 @@ edits in rdflib with edits in solid-ui, but if you're only editing rdflib, the
 
 You can also test changes directly on the instance of NSS that starts when running `npm start` in mashlib-dev. mashlib-dev also offers a watch-script that you can start doing `npm run watch` that triggers the watch-script for mashlib, solid-ui, and solid-panes. If you want to run watch-script for rdflib or any of the panes, you'll have to open another terminal window, navigate to the respective project and start its watch-script doing `npm run watch`.
 
-The output for the watch-script in mashlib-dev can be a bit difficult to interpret, since all output for mashlib, solid-ui, and solid-panes are presented in the same window, so you might also consider having each watch scripts running in a separate terminal window. The downside using this approach is that at its worst you'll have five separate watch-scripts running (in addition to the terminal window where you started the server) when working on a pane that needs to pick up a change in rdflib. If you find this unwieldy for your setup, or requiring to much resources, you should consider the Solid Pane Tester strategy instead.
+The output for the watch-script in mashlib-dev can be a bit difficult to interpret, since all output for mashlib, solid-ui, and solid-panes are presented in the same window, so you might also consider having each watch scripts running in a separate terminal window. The downside using this approach is that at its worst you'll have five separate watch-scripts running (in addition to the terminal window where you started the server) when working on a pane that needs to pick up a change in rdflib. If you find this unwieldy for your setup, or requiring too much resources, you should consider the Solid Pane Tester strategy instead.
 
 ## Add dependency
 
