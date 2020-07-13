@@ -1,5 +1,3 @@
-NB: this repo is mainly useful for developing the full stack, from rdflib, to solid-ui, to solid-panes, to mashlib, to node-solid-server. If you are developing a pane then you will probably find the [Solid Pane Tester](https://github.com/solid/solid-panes#development) more useful - there, you will be able to see the effect of your changes in 5 seconds, whereas a full recompile in mashlib-dev takes more like 5 minutes.
-
 # Mashlib development project
 
 This project is intended to ease the development setup for the mashlib project, aka Solid data browser.
@@ -37,7 +35,31 @@ npm start
 
 Some projects require you to build a package before you can see changes, so check the various package.json files to see which scripts are available. You can usually do `npm run build`, and some also supports `npm run watch` which builds a new version each time you do a local change.
 
-You can also combine it with the Pane Tester, for instance when debugging code from solid-ui that affects the Sharing pane, you might run `npm start` to set the links between the workspaces, then run `npm run watch` in the solid-ui workspace and use the [Solid Pane Tester](https://github.com/solid/solid-panes#development) in the solid-panes workspace, with the Sharing pane in workspaces/solid-panes/dev/pane/, to see how your edits in solid-ui affect the Sharing pane.
+## Debugging solid-panes
+Mashlib-dev is a powerful setup for developing the full stack, from rdflib, to solid-ui, to solid-panes, to mashlib, to node-solid-server. If you are just developing a pane then you will probably find the [Solid Pane Tester](https://github.com/solid/solid-panes#development) more useful. There, you will be able to see the effect of your changes in 5 seconds, whereas a full recompile in mashlib-dev takes more like 5 minutes. You can also just run the pane tester within mashlib-dev, at worspaces/solid-panes/dev/.
+
+## Debugging solid-ui
+To debug solid-ui, you can combine the solid-ui to solid-panes link with the Pane Tester. For instance when debugging code from solid-ui that affects the Sharing pane, you might run `npm start` to set the links between the workspaces, then run `npm run watch` in the solid-ui workspace and use the [Solid Pane Tester](https://github.com/solid/solid-panes#development) in the solid-panes workspace, with the Sharing pane in workspaces/solid-panes/dev/pane/, to see how your edits in solid-ui affect the Sharing pane.
+
+## Debugging rdflib
+Run:
+```sh
+npm run add rdflib
+npm start
+cd workspaces/rdflib
+npm install
+```
+In another terminal window, run `cd workspaces/solid-ui ; npm run watch`.
+In another terminal window, run `cd workspaces/solid-panes/dev/ ; npx webpack-dev-server`.
+Edit `workspaces/solid-panes/dev/pane/` to have the pane you want to debug.
+Open http://localhost:9000 and run `renderPane('http://example.com/#me')` in the console to check
+if your setup works.
+Then, under `workspaces/rdflib`, make your change, for instance add a console.log somewhere. Then:
+```sh
+cd workspaces/rdflib
+npm run build:esm && cd ../solid-ui && npm run build-lib && cd ../rdflib
+```
+The browser will reload. This way, it should take about 20 seconds to see your changes appear in the browser.
 
 ## Add dependency
 
