@@ -37,6 +37,8 @@ npm start
 
 Some projects require you to build a package before you can see changes, so check the various package.json files to see which scripts are available. You can usually do `npm run build`, and some also supports `npm run watch` which builds a new version each time you do a local change.
 
+You can also combine it with the Pane Tester, for instance when debugging code from solid-ui that affects the Sharing pane, you might run `npm start` to set the links between the workspaces, then run `npm run watch` in the solid-ui workspace and use the [Solid Pane Tester](https://github.com/solid/solid-panes#development) in the solid-panes workspace, with the Sharing pane in workspaces/solid-panes/dev/pane/, to see how your edits in solid-ui affect the Sharing pane.
+
 ## Add dependency
 
 You can add other projects to your workspaces to do local changes. We've mapped most projects that are related to mashlib for you, so you can simply do:
