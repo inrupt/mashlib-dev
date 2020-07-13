@@ -56,12 +56,17 @@ npm run build-lib
 ```
 
 In another terminal window, run `cd workspaces/solid-panes/dev/ ; npx webpack-dev-server`.
+
 Edit `workspaces/solid-panes/dev/pane/` to have the pane you want to debug.
 Open http://localhost:9000 and run `renderPane('http://example.com/#me')` in the console to check
 if your setup works.
 Then, under `workspaces/rdflib`, make your change, for instance add a console.log somewhere. It
-should then be enough to run `npm run build:esm` in `workspaces/rdflib` to make your changes in
+should then be enough to run `npm run watch` in `workspaces/rdflib` to make your changes in
 rdflib appear in the browser.
+
+You can also combine this with `cd workspaces/solid-ui ; npm run watch` so that you can combine
+edits in rdflib with edits in solid-ui, but if you're only editing rdflib, the
+`npm run watch` in `workspaces/rdflib` should be enough.
 
 ## Add dependency
 
