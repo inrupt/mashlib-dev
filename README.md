@@ -1,8 +1,8 @@
+NB: this repo is mainly useful for developing the full stack, from rdflib, to solid-ui, to solid-panes, to mashlib, to node-solid-server. If you are developing a pane then you will probably find the [Solid Pane Tester](https://github.com/solid/solid-panes#development) more useful - there, you will be able to see the effect of your changes in 5 seconds, whereas a full recompile in mashlib-dev takes more like 5 minutes.
+
 # Mashlib development project
 
 This project is intended to ease the development setup for the mashlib project, aka Solid data browser.
-
-NB: this repo is mainly useful for developing the full stack, from rdflib, to solid-ui, to solid-panes, to mashlib, to node-solid-server. If you are developing a pane then you will probably find the [Solid Pane Tester](https://github.com/solid/solid-panes#development) more useful - there, you will be able to see the effect of your changes in 5 seconds, whereas a full recompile in mashlib-dev takes more like 5 minutes.
 
 It allows you to install automatically several of the component repositories of the mashlib system, and coordinate their development.
 
