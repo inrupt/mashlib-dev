@@ -19,6 +19,9 @@ case $1 in
     FOLDER='issue-pane'
     GIT_URL='https://github.com/solid/issue-pane'
     ;;
+  'jose')
+    GIT_URL='https://github.com/solid/jose'
+    ;;
   'mashlib')
     GIT_URL='https://github.com/solid/mashlib'
     ;;
@@ -29,20 +32,44 @@ case $1 in
   'node-solid-server')
     GIT_URL='https://github.com/solid/node-solid-server'
     ;;
+  'oidc-auth-manager')
+    GIT_URL='https://github.com/solid/oidc-auth-manager.git'
+    ;;
+  'oidc-op')
+    GIT_URL='https://github.com/solid/oidc-op'
+    ;;
+  'oidc-rp')
+    GIT_URL='https://github.com/solid/oidc-rp'
+    ;;
   'pane-registry' | 'registry')
     GIT_URL='https://github.com/solid/pane-registry'
     ;;
   'rdflib')
     GIT_URL='https://github.com/linkeddata/rdflib.js.git'
     ;;
+  'solid-auth-cli')
+    GIT_URL='https://github.com/jeff-zucker/solid-auth-cli.git'
+    ;;
   'solid-auth-client')
     GIT_URL='https://github.com/solid/solid-auth-client.git'
+    ;;
+  'solid-auth-tls')
+    GIT_URL='https://github.com/solid/solid-auth-tls.git'
+    ;;
+  'solid-cli')
+    GIT_URL='https://github.com/solid/solid-cli.git'
+    ;;
+  'solid-multi-rp-client')
+    GIT_URL='https://github.com/solid/solid-multi-rp-client.git'
     ;;
   'solid-namespace')
     GIT_URL='https://github.com/solid/solid-namespace'
     ;;
   'solid-panes')
     GIT_URL='https://github.com/solid/solid-panes'
+    ;;
+  'solid-rest')
+    GIT_URL='https://github.com/jeff-zucker/solid-rest.git'
     ;;
   'solid-ui')
     GIT_URL='https://github.com/solid/solid-ui'
