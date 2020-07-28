@@ -32,6 +32,9 @@ case $1 in
   'node-solid-server')
     GIT_URL='https://github.com/solid/node-solid-server'
     ;;
+  'node-solid-ws')
+    GIT_URL='https://github.com/solid/node-solid-ws.git'
+    ;;
   'oidc-auth-manager')
     GIT_URL='https://github.com/solid/oidc-auth-manager.git'
     ;;
