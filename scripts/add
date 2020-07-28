@@ -3,6 +3,9 @@
 FOLDER=$1
 GIT_URL=$2
 case $1 in
+  'acl-check')
+    GIT_URL='https://github.com/solid/acl-check.git'
+    ;;
   'chat' | 'chat-pane')
     FOLDER='chat-pane'
     GIT_URL='https://github.com/solid/chat-pane'
