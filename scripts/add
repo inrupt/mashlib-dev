@@ -25,6 +25,9 @@ case $1 in
   'jose')
     GIT_URL='https://github.com/solid/jose'
     ;;
+  'keychain')
+    GIT_URL='https://github.com/solid/keychain'
+    ;;
   'mashlib')
     GIT_URL='https://github.com/solid/mashlib'
     ;;
@@ -58,6 +61,9 @@ case $1 in
     ;;
   'solid-auth-client')
     GIT_URL='https://github.com/solid/solid-auth-client.git'
+    ;;
+  'solid-auth-oidc')
+    GIT_URL='https://github.com/solid/solid-auth-oidc.git'
     ;;
   'solid-auth-tls')
     GIT_URL='https://github.com/solid/solid-auth-tls.git'
