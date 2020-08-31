@@ -66,6 +66,9 @@ case $1 in
   'solid-auth-client')
     GIT_URL='https://github.com/solid/solid-auth-client.git'
     ;;
+  'solid-auth-fetcher')
+    GIT_URL='https://github.com/solid/solid-auth-fetcher.git'
+    ;;
   'solid-auth-oidc')
     GIT_URL='https://github.com/solid/solid-auth-oidc.git'
     ;;
@@ -74,6 +77,9 @@ case $1 in
     ;;
   'solid-cli')
     GIT_URL='https://github.com/solid/solid-cli.git'
+    ;;
+  'solid-crud-tests')
+    GIT_URL='https://github.com/solid/solid-crud-tests.git'
     ;;
   'solid-multi-rp-client')
     GIT_URL='https://github.com/solid/solid-multi-rp-client.git'
