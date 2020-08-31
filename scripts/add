@@ -6,6 +6,10 @@ case $1 in
   'acl-check')
     GIT_URL='https://github.com/solid/acl-check.git'
     ;;
+  'activitystreams' | 'activitystreams-pane')
+    FOLDER='activitystreams-pane'
+    GIT_URL='https://github.com/solid/activitystreams-pane'
+    ;;
   'chat' | 'chat-pane')
     FOLDER='chat-pane'
     GIT_URL='https://github.com/solid/chat-pane'
