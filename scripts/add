@@ -100,6 +100,9 @@ case $1 in
     FOLDER='source-pane'
     GIT_URL='https://github.com/solid/source-pane'
     ;;
+  'web-access-control-tests')
+    GIT_URL='https://github.com/solid/web-access-control-tests.git'
+    ;;
 esac
 
 if test -z "$GIT_URL"
