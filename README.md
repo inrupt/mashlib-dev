@@ -55,9 +55,17 @@ This means that if you do a change in solid-panes and want to see the result on 
 
 Mashlib-dev is a powerful setup for developing the full stack, from rdflib, to solid-ui, to solid-panes, to mashlib, to node-solid-server. If you are just developing a pane then you will probably find the [Solid Pane Tester](https://github.com/solid/solid-panes#development) more useful. There, you will be able to see the effect of your changes in 5 seconds, whereas a full recompile in mashlib-dev takes more like 5 minutes. You can also just run the pane tester within mashlib-dev, at worspaces/solid-panes/dev/.
 
-### Debugging solid-ui using Solid Pane Tester
+### Debugging solid-ui
 
-To debug solid-ui, you can combine the solid-ui to solid-panes link with the Pane Tester. For instance when debugging code from solid-ui that affects the Sharing pane, you might run `npm start` to set the links between the workspaces, then run `npm run watch` in the solid-ui workspace and use the [Solid Pane Tester](https://github.com/solid/solid-panes#development) in the solid-panes workspace, with the Sharing pane in workspaces/solid-panes/dev/pane/, to see how your edits in solid-ui affect the Sharing pane.
+### using storybook
+
+To debug a component from solid-ui in isolation, when you do not need the surrounding solid-pane, you
+can [run storybook in the solid-ui repository](https://github.com/solid/solid-ui#Development).
+ 
+#### using Solid Pane Tester
+
+To debug solid-ui within a pane, you can combine the solid-ui to solid-panes link with the Pane Tester. For instance
+ when debugging code from solid-ui that affects the Sharing pane, you might run `npm start` to set the links between the workspaces, then run `npm run watch` in the solid-ui workspace and use the [Solid Pane Tester](https://github.com/solid/solid-panes#development) in the solid-panes workspace, with the Sharing pane in workspaces/solid-panes/dev/pane/, to see how your edits in solid-ui affect the Sharing pane.
 
 ### Debugging rdflib using Solid Pane Tester
 Run:
